@@ -63,10 +63,51 @@ $superheroes = [
   ], 
 ];
 
+
+
+  
+
+
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
+ // $name= var_dump($_POST);Captain
+  $name2 = ltrim($_POST['name_']);
+  $name3=$_POST ;
+  $name4="Ironman";
+  
+  
+  
+  //print_r ($name3['name_']);
+  if($name2!=""){
+  $name2= strtolower($name2);
+  foreach ($superheroes as $superhero){
+    if (strtolower($superhero['name'])==$name2 or  ($name2==strtolower($superhero['alias']))) {
+      echo "<p style='font-size: 22px; height:5px;'> " .$superhero['alias']."</p>";
+      echo "<p style='font-size: 17px; height:15px;'>"."A.K.A ". $superhero['name']."</p>";
+      echo "<p style='font-size: 15px; '>" . $superhero['biography']. "</p>"." \n ";
+  }else {
+    echo "<p style='font-size: 22px; height:5px; color:red;'> " ."SUPERHERO NOT FOUND"."</p>". "\n";
+}
+  
+  
+} 
+}
+elseif ($name2==""){
+  foreach ($superheroes as $superhero){ 
+    echo "<li>". $superhero['alias']."</li>";
+  }
+ 
+}
+
+  
+}
+
+
+
+
 ?>
 
-<ul>
+<!-- <ul>
 <?php foreach ($superheroes as $superhero): ?>
   <li><?= $superhero['alias']; ?></li>
 <?php endforeach; ?>
-</ul>
+</ul> -->

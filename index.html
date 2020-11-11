@@ -11,19 +11,30 @@
     <title>INFO2180 Lab 4</title>
 
 </head>
+<div id="container">
 
-<body>
-    <header>
-        <h2> AVENGERS CHARACTER SEARCH </h2>
-    </header>
-    <main>
+    <body>
+        <header>
+            <h2> AVENGERS CHARACTER SEARCH </h2>
+        </header>
+        <main>
 
-        <button type="button" id="search1">Search</button>
-        <div id="searchresults"> </div>
-    </main>
-    <footer>
-        <p>Copyright &copy; 2020 Tomoya S. Vernon </p>
-    </footer>
-</body>
+            <button type="button" id="search1">Search</button>
+            <form action="http://localhost:8080/superheroes.php" method="POST">
+                <label for="Search" id="label">Search by Full Name or Alias </label><br>
+                <input type="text" id="entername" name="name">
+                <input type="submit" value="Search" id="btn2">
+            </form>
+            <h3>RESULT </h3>
+            <hr>
+            <div id="results">
+
+            </div>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2020 Tomoya S. Vernon </p>
+        </footer>
+    </body>
+</div>
 
 </html>

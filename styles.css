@@ -1,0 +1,63 @@
+#entername {
+    width: 75%;
+}
+
+html {
+    background-color: white;
+}
+
+#container {
+    border-style: solid;
+    height: 500px;
+    border-width: 1px;
+    background-color: bisque;
+    position: relative;
+}
+
+body {
+    border-color: black;
+}
+
+form {
+    padding-left: 200px;
+}
+
+header {
+    background-color: teal;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+#label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    padding-left: 200px;
+    height: 10px;
+}
+
+#results {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 190px;
+}
+
+footer {
+    padding-left: 200px;
+    background-color: teal;
+    position: fixed;
+    width: 85.19%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+hr {
+    width: 950px;
+}
